@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project is a simple TypeScript application that generates greeting messages.
+This project is a simple TypeScript application that generates greeting messages using Bun.sh, ElysiaJS and Tailwindcss.
 
 > I use Tailwindcss CDN version because I had Issues getting the CLI/PostCSS version to work
 
