@@ -3,17 +3,17 @@ import { html, Html } from "@elysiajs/html";
 import { Greeting } from "./Greeting";
 
 new Elysia()
-  .use(html())
-  .get(
-    "/:name?",
-    ({ params }) => {
-      const name = params.name ?? "";
-      return <Greeting name={name} />;
-    },
-    {
-      params: t.Object({
-        name: t.Optional(t.String()),
-      }),
-    }
-  )
-  .listen(3000);
+	.use(html())
+	.get(
+		"/:name?",
+		({ params }) => {
+			const name = params.name ?? "";
+			return <Greeting name={name} />;
+		},
+		{
+			params: t.Object({
+				name: t.Optional(t.String()),
+			}),
+		},
+	)
+	.listen(Bun.env.PORT ?? 3000);
