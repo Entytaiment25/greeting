@@ -1,6 +1,6 @@
 {
   "name": "greeting",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "module": "src/index.tsx",
   "author": "Entytaiment25",
   "license": "MIT",
