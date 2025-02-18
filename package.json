@@ -1,20 +1,27 @@
 {
-	"name": "greeting",
-	"version": "1.0.0",
-	"module": "src/index.tsx",
-	"author": "Entytaiment25",
-	"license": "MIT",
-	"scripts": {
-		"start": "bun run src/index.tsx",
-		"dev": "bun run --watch src/index.tsx"
-	},
-	"dependencies": {
-		"@elysiajs/html": "^1.2.0",
-		"elysia": "1.2.14"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
-		"@types/bun": "^1.2.2",
-		"bun-types": "latest"
-	}
+  "name": "greeting",
+  "version": "1.0.0",
+  "module": "src/index.tsx",
+  "author": "Entytaiment25",
+  "license": "MIT",
+  "scripts": {
+    "start": "bun run src/index.tsx",
+    "dev": "bun run --watch src/index.tsx",
+    "tailwind": "bun x @tailwindcss/cli -i ./src/input.css -o ./../dist/output.css --minify"
+  },
+  "dependencies": {
+    "@elysiajs/html": "^1.2.0",
+    "@tailwindcss/cli": "^4.0.6",
+    "elysia": "1.2.14",
+    "tailwindcss": "^4.0.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "^1.2.2",
+    "bun-types": "latest"
+  },
+  "trustedDependencies": [
+    "@biomejs/biome",
+    "@parcel/watcher"
+  ]
 }

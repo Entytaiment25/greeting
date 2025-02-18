@@ -7,7 +7,7 @@ export const Greeting = ({ name }: { name?: string }) => (
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Greeting</title>
-        <script src="https://unpkg.com/@tailwindcss/browser@4" />
+		<link href="./output.css" rel="stylesheet" />
       </head>
       <body class="bg-neutral-900 min-h-screen flex flex-col">
         <main class="flex-1 flex items-center justify-center p-4">
@@ -15,7 +15,7 @@ export const Greeting = ({ name }: { name?: string }) => (
             {name ? (
               <>
                 Hello,{" "}
-                <span class="text-neutral-900 bg-blue-400 px-2 py-1 rounded">
+                <span class="text-neutral-900 bg-blue-400 px-2 py-1 rounded underline">
                   {decodeURIComponent(name)}
                 </span>
               </>

@@ -1,6 +1,9 @@
 import { Elysia, t } from "elysia";
 import { html, Html } from "@elysiajs/html";
 import { Greeting } from "./Greeting";
+import { readFileSync } from "node:fs";
+
+const cssContent = Bun.file("./../dist/output.css");
 
 new Elysia()
 	.use(html())
@@ -16,4 +19,11 @@ new Elysia()
 			}),
 		},
 	)
+	.get("/output.css", () => {
+		return new Response(cssContent, {
+			headers: {
+				"Content-Type": "text/css",
+			},
+		});
+	})
 	.listen(Bun.env.PORT ?? 3000);

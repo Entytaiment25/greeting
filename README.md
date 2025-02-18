@@ -4,8 +4,6 @@
 
 This project is a simple TypeScript application that generates greeting messages using Bun.sh, ElysiaJS and Tailwindcss.
 
-> I use Tailwindcss CDN version because I had Issues getting the CLI/PostCSS version to work
-
 ## Installation
 
 1. Clone the repository:
@@ -26,6 +24,7 @@ This project is a simple TypeScript application that generates greeting messages
 To run the application, use the following command:
 
 ```sh
+bun tailwind
 bun start
 ```
 
