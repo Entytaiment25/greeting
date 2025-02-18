@@ -4,6 +4,7 @@
   "module": "src/index.tsx",
   "author": "Entytaiment25",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "start": "bun run src/index.tsx",
     "dev": "bun run --watch src/index.tsx",
