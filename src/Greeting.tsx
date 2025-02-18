@@ -16,7 +16,7 @@ export const Greeting = ({ name }: { name?: string }) => (
               <>
                 Hello,{" "}
                 <span class="text-neutral-900 bg-blue-400 px-2 py-1 rounded">
-                  {name}
+                  {decodeURIComponent(name)}
                 </span>
               </>
             ) : (
