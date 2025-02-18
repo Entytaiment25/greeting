@@ -2,8 +2,11 @@ import { Elysia, t } from "elysia";
 import { html, Html } from "@elysiajs/html";
 import { Greeting } from "./Greeting";
 import { readFileSync } from "node:fs";
+import { inject } from "@vercel/analytics";
 
 const cssContent = Bun.file("./../dist/output.css");
+
+inject();
 
 new Elysia()
 	.use(html())

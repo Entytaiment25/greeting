@@ -7,11 +7,13 @@
   "scripts": {
     "start": "bun run src/index.tsx",
     "dev": "bun run --watch src/index.tsx",
-    "tailwind": "bun x @tailwindcss/cli -i ./src/input.css -o ./../dist/output.css --minify"
+    "tailwind": "bun x @tailwindcss/cli -i ./src/input.css -o ./../dist/output.css --minify",
+    "build": "bun build src/index.tsx --target node --outdir ./build"
   },
   "dependencies": {
     "@elysiajs/html": "^1.2.0",
     "@tailwindcss/cli": "^4.0.6",
+    "@vercel/analytics": "^1.5.0",
     "elysia": "1.2.14",
     "tailwindcss": "^4.0.6"
   },
