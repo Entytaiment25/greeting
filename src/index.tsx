@@ -4,7 +4,7 @@ import { Greeting } from "./Greeting";
 
 const cssContent = Bun.file("./../dist/output.css");
 
-const app = new Elysia()
+new Elysia()
   .use(html())
   .get(
     "/:name?",
@@ -26,5 +26,3 @@ const app = new Elysia()
     });
   })
   .listen(Bun.env.PORT ?? 3000);
-
-export default app;

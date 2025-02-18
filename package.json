@@ -4,12 +4,11 @@
 	"module": "src/index.tsx",
 	"author": "Entytaiment25",
 	"license": "MIT",
-	"type": "module",
 	"scripts": {
 		"start": "bun run src/index.tsx",
 		"dev": "bun run --watch src/index.tsx",
 		"tailwind": "bun x @tailwindcss/cli -i ./src/input.css -o ./../dist/output.css --minify",
-		"build": "bun build src/index.tsx --target node --format esm --outdir ./public --minify"
+		"build": "bun build src/index.tsx --target bun --outdir ./public --minify"
 	},
 	"dependencies": {
 		"@elysiajs/html": "^1.2.0",
