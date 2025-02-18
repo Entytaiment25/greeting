@@ -8,7 +8,8 @@
 		"start": "bun run src/index.tsx",
 		"dev": "bun run --watch src/index.tsx",
 		"tailwind": "bun x @tailwindcss/cli -i ./src/input.css -o ./../dist/output.css --minify",
-		"build": "bun build src/index.tsx --target node --outdir ./public --minify"
+		"build": "bun build src/index.tsx --target node --outdir ./public --minify",
+		"vercel-build": "bun run tailwind && bun run build"
 	},
 	"dependencies": {
 		"@elysiajs/html": "^1.2.0",
