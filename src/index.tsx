@@ -25,6 +25,6 @@ const app = new Elysia()
       },
     });
   })
-  .listen(Bun.env.PORT ?? 5000);
+  .listen(Bun.env.PORT ?? 3000);
 
 export default app;
