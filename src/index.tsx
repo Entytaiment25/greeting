@@ -1,11 +1,8 @@
 import { Elysia, t } from "elysia";
 import { html, Html } from "@elysiajs/html";
 import { Greeting } from "./Greeting";
-import { inject } from "@vercel/analytics";
 
 const cssContent = Bun.file("./../dist/output.css");
-
-inject();
 
 const app = new Elysia()
   .use(html())
@@ -28,6 +25,6 @@ const app = new Elysia()
       },
     });
   })
-  .listen(Bun.env.PORT ?? 3000);
+  .listen(Bun.env.PORT ?? 5000);
 
 export default app;
